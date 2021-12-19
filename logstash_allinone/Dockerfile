@@ -1,4 +1,4 @@
-FROM ub-java:3.0
+FROM bcsachin/ub-java:3.0
 
 ENV DEBIAN_FRONTEND noninteractive
 

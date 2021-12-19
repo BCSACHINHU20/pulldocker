@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   elasticsearch:
-    image: es1
+    image: bcsachin/pullelastic:w1
     container_name: elasticsearch
     environment:
       - node.name=es01
@@ -23,7 +23,7 @@ services:
       - elastic
 
   kibana:
-    image: kib:2.0
+    image: bcsachin/pullkibana:w1
     container_name: kibana
     environment:
       SERVER_NAME: localhost
@@ -43,7 +43,7 @@ services:
       - elastic
 
   logstashlocal:
-    image: logstashall:w2
+    image: bcsachin/pulllogstash:w2
     container_name: logstashlocal
     environment:
       SERVER_NAME: localhost
